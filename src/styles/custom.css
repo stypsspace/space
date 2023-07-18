@@ -1,0 +1,32 @@
+
+/********************************************************************
+ Body
+ *******************************************************************/
+
+ body{
+    background:#070707; 
+    color:#fff;  
+    }
+   
+   /********************************************************************
+    Post.
+    *******************************************************************/
+   
+    /* Wrap */
+    .more-posts-wrap{
+    position:relative;   
+    }
+   
+    /* Header */
+    .more-posts-header{
+   position:relative;
+   display:none;
+    }
+   
+    /* Content */
+   .more-posts-content{
+   position:relative; 
+   background: #070707; 
+   padding: 30px;
+   border-radius: 20px;;   
+   }
