@@ -4,8 +4,8 @@
  *******************************************************************/
 
  body{
-    background:#070707; 
-    color:#fff;  
+    /*background:#070707; 
+    color:#fff; */ 
     }
    
    /********************************************************************
@@ -29,4 +29,24 @@
    background: #070707; 
    padding: 30px;
    border-radius: 20px;;   
+   }
+
+   .post-externalurl{
+   position: relative; 
+   }
+
+   .post-title{
+    position: relative; 
+   }
+
+   .post-date{
+    position: relative;
+   }
+
+   .post-avatar{
+    position: relative;
+   }
+
+   .post-image{
+    position: relative;
    }
