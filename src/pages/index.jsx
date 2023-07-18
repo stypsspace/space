@@ -1,9 +1,45 @@
-const Homepage = () => {
-  return (
-    <div>
-      <h1 className="text-3xl font-bold">Home Page</h1>
-    </div>
-  );
-};
+import { client } from '@/lib/contentful/client'
+import PostCard from '@/components/posts/PostCard'
+import { useState } from 'react'
 
-export default Homepage;
+const Posts = ({ posts }) => {
+  const [selectedFilter, setSelectedFilter] = useState('All')
+
+  const handleFilterSelect = (filter) => {
+    setSelectedFilter(filter)
+  }
+
+  const filteredPosts = selectedFilter === 'All' ? posts : posts.filter(post => post.fields.category === selectedFilter)
+
+  return (
+    <section className='section'>
+      <div className='container'>
+        <div className='filter-container'>
+          <button className={selectedFilter === 'All' ? 'active' : ''} onClick={() => handleFilterSelect('All')}>All</button>
+          <button className={selectedFilter === 'Portfolio' ? 'active' : ''} onClick={() => handleFilterSelect('Portfolio')}>Portfolio</button>
+          <button className={selectedFilter === 'Commerce' ? 'active' : ''} onClick={() => handleFilterSelect('Commerce')}>Commerce</button>
+          <button className={selectedFilter === 'Commerce' ? 'active' : ''} onClick={() => handleFilterSelect('App')}>App</button>
+        </div>
+
+        <ul className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 sm:gap-10'>
+          {filteredPosts.map((post, i) => (
+            <PostCard key={post.fields.slug} post={post} />
+          ))}
+        </ul>
+      </div>
+    </section>
+  )
+}
+
+export const getStaticProps = async () => {
+  const response = await client.getEntries({ content_type: 'post' })
+
+  return {
+    props: {
+      posts: response.items,
+      revalidate: 60
+    }
+  }
+}
+
+export default Posts
