@@ -4,9 +4,9 @@ import React from 'react'
 const Layout = ({ children }) => {
   return (
     <>
-      <header className='bg-stone-100 p-8'>
+      <header className='site-header'>
         <nav className='container'>
-          <ul className='flex gap-4'>
+          <ul className='site-header-menu'>
             <li>
               <Link
                 href='/'

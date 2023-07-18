@@ -43,11 +43,30 @@ Body
 *******************************************************************/
 
 body{
-/*background:#070707; 
-color:#fff; */ 
+background:#070707; 
+color:#fff; 
 position: relative; 
 }
 
+body a,
+body header{
+color:#fff;    
+}
+
+
+.site-header{
+background:#070707; 
+color:#fff; 
+margin-top:10px;   
+}
+
+
+.site-header-menu{
+display: flex;
+justify-content: space-between;
+align-items: center;
+width:100%;     
+}
 /********************************************************************
 Post.
 *******************************************************************/
