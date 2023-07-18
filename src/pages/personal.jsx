@@ -1,10 +1,10 @@
 import { client } from '@/lib/contentful/client';
 import PostCard from '@/components/posts/PostCard';
 
-const Portfolio = ({ posts }) => {
+const Personal = ({ posts }) => {
   return (
     <div>
-      <h1>Portfolio Page</h1>
+      <h1>Personal Page</h1>
       <ul>
         {posts.map((post) => (
           <PostCard key={post.sys.id} post={post} />
@@ -17,7 +17,7 @@ const Portfolio = ({ posts }) => {
 export async function getStaticProps() {
   const response = await client.getEntries({
     content_type: 'post',
-    'fields.category': 'Portfolio',
+    'fields.category': 'Personal',
   });
 
   const posts = response.items.map((post) => ({
@@ -32,4 +32,4 @@ export async function getStaticProps() {
   };
 }
 
-export default Portfolio;
+export default Personal;
