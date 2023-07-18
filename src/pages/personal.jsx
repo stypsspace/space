@@ -3,9 +3,9 @@ import PostCard from '@/components/posts/PostCard';
 
 const Personal = ({ posts }) => {
   return (
-    <div>
+    <div class="category-container-wrap">
       <h1>Personal Page</h1>
-      <ul>
+      <ul class="category-container">
         {posts.map((post) => (
           <PostCard key={post.sys.id} post={post} />
         ))}
