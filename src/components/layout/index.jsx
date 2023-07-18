@@ -24,14 +24,6 @@ const Layout = ({ children }) => {
               </Link>
             </li>
             <li>
-              <Link
-                href='/Personal'
-                className='text-sm font-medium uppercase text-stone-400'
-              >
-                Personal
-              </Link>
-            </li>
-            <li>
             <Link
                 href='/Portfolio'
                 className='text-sm font-medium uppercase text-stone-400'

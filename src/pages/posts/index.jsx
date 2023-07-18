@@ -24,6 +24,9 @@ const Posts = ({ posts }) => {
           <button className={selectedFilter === 'Commerce' ? 'active' : ''} onClick={() => handleFilterSelect('Commerce')}>
             Commerce
           </button>
+          <button className={selectedFilter === 'Personal' ? 'active' : ''} onClick={() => handleFilterSelect('Personal')}>
+            Personal
+          </button>
           <button className={selectedFilter === 'App' ? 'active' : ''} onClick={() => handleFilterSelect('App')}>
             App
           </button>
