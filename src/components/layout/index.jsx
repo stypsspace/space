@@ -33,7 +33,14 @@ const Layout = ({ children }) => {
               </Link>
             </li>
 
-           
+            <li>
+            <Link
+                href='/portfolio'
+                className='text-sm font-medium uppercase text-stone-400'
+              >
+                Portfolio
+              </Link>
+            </li>
           </ul>
         </nav>
       </header>
