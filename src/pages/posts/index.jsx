@@ -9,7 +9,7 @@ const Posts = ({ posts }) => {
     setSelectedFilter(filter);
   };
 
-  const filteredPosts = selectedFilter === 'All' ? posts : posts.filter(post => post.category === selectedFilter);
+  const filteredPosts = selectedFilter === 'All' ? posts : posts.filter(post => post.fields.category === selectedFilter);
 
   return (
     <section className='section'>
@@ -33,7 +33,6 @@ const Posts = ({ posts }) => {
           {filteredPosts.map((post) => (
             <PostCard key={post.slug} post={post} />
           ))}
-         
         </ul>
       </div>
     </section>
