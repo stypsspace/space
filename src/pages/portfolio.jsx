@@ -3,9 +3,9 @@ import PostCard from '@/components/posts/PostCard';
 
 const Portfolio = ({ posts }) => {
   return (
-    <div class="category-container-wrap">
+    <div className="category-container-wrap">
       <h1>Portfolio Page</h1>
-      <ul class="category-container">
+      <ul className="category-container">
         {posts.map((post) => (
           <PostCard key={post.sys.id} post={post} />
         ))}
