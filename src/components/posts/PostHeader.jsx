@@ -12,7 +12,7 @@ const PostHeader = ({ post }) => {
       <div class="post-externalurl">
       {externalUrl && (
         <a href={externalUrl} target="_blank" rel="noopener noreferrer">
-          <button>Visit Website</button>
+          <button>Visit</button>
         </a>
       )}
     </div>
@@ -25,7 +25,7 @@ const PostHeader = ({ post }) => {
       
       
       </div>
-      
+
       <div class="post-image">
       <div className='mb-8 md:mb-16 sm:mx-0'>
         <ContentfulImage

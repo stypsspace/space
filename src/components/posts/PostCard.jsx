@@ -22,7 +22,7 @@ const PostCard = ({ post }) => {
         <div class="post-externalurl">
         {externalUrl && (
           <a href={externalUrl} target='_blank' rel='noopener noreferrer' className='mt-4 text-blue-500 underline'>
-            Visit Website
+            Visit
           </a>
         )}
        </div>
