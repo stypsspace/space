@@ -15,17 +15,19 @@ const PostCard = ({ post }) => {
     <li className='rounded-md overflow-hidden shadow-md'>
     <div className='p-4'>
 
-     <div class="post-title">
-        <h3 className='text-xl mb-1 leading-snug'>{title}</h3>
-        </div>
+    <div class="post-header">
+       <span class="post-title">
+        <h1>{title}</h1>
+        </span>
 
-        <div class="post-externalurl">
+        <span class="post-externalurl">
         {externalUrl && (
           <a href={externalUrl} target='_blank' rel='noopener noreferrer' className='mt-4 text-blue-500 underline'>
             Visit
           </a>
         )}
-       </div>
+       </span>
+      </div>
 
         <div className='text-sm mb-4 text-gray-400'>
           <span class="post-date"><DateComponent dateString={date} /></span>

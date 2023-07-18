@@ -1,52 +1,137 @@
+/******************************************************************
+Reset
+******************************************************************/
+*{
+margin:0;
+padding:0;
+box-sizing: border-box;
+}
+
+img, svg {
+display:block;
+max-width:100%;   
+}
+
+a{
+text-decoration:none;  
+color:#000;
+}
+
+li{
+list-style: none;   
+}
+
+button,
+input,
+select,
+textarea {
+outline:none;
+border:none;
+background:transparent; 
+-webkit-appearance: none; 
+-moz-appearance: none; 
+-ms-appearance: none; 
+-o-appearance: none; 
+appearance: none;  
+}
+
+
+
 
 /********************************************************************
- Body
- *******************************************************************/
+Body
+*******************************************************************/
 
- body{
-    /*background:#070707; 
-    color:#fff; */ 
-    }
-   
-   /********************************************************************
-    Post.
-    *******************************************************************/
-   
-    /* Wrap */
-    .more-posts-wrap{
-    position:relative;   
-    }
-   
-    /* Header */
-    .more-posts-header{
-   position:relative;
-   display:none;
-    }
-   
-    /* Content */
-   .more-posts-content{
-   position:relative; 
-   background: #070707; 
-   padding: 30px;
-   border-radius: 20px;;   
-   }
+body{
+/*background:#070707; 
+color:#fff; */ 
+}
 
-   .post-externalurl{
-   position: relative; 
-   }
+/********************************************************************
+Post.
+*******************************************************************/
 
-   .post-title{
-    position: relative; 
-   }
+/* Article */
+.post-article{
+position: relative; 
+width:50%;
+}
 
-   .post-date{
-    position: relative;
-   }
 
-   .post-avatar{
-    position: relative;
-   }
+/*Post filter */
+.filter-container{
+display: flex;
+justify-content: space-between;
+align-items: center;
+width:25%; 
+}
+ 
+.filter-container button{
+position: relative;  
+}
 
-   .post-image{
-    position: relative;
-   }
+
+/*Post header */
+.post-header{
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+
+.post-title{
+position: relative; 
+}
+
+.post-externalurl{
+position: relative; 
+}
+
+.post-date{
+position: relative;
+display:none;
+}
+
+.post-avatar{
+position: relative;
+display:none;
+}
+
+.post-excerpt{
+position: relative;
+display:none;
+}
+
+    
+.post-image{
+position: relative;
+}
+
+
+
+
+
+
+
+
+
+/* More posts wrap */
+.more-posts-wrap{
+position:relative;   
+}
+
+/* Header */
+.more-posts-header{
+position:relative;
+display:none;
+}
+
+/* Content */
+.more-posts-content{
+position:relative; 
+background: #070707; 
+padding: 30px;
+border-radius: 20px;;   
+}
+
+

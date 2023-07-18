@@ -15,7 +15,7 @@ const Post = ({ post, morePosts }) => {
   return (
     <section className="section">
       <div className="container">
-        <article className="prose mx-auto">
+        <article className="post-article">
           <PostHeader post={post} />
           <PostBody post={post} />
         </article>

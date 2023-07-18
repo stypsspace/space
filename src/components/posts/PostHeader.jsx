@@ -8,13 +8,18 @@ const PostHeader = ({ post }) => {
 
   return (
     <>
-      <h2>{title}</h2>
-      <div class="post-externalurl">
+      
+      <div class="post-header">
+      <span class="post-title">
+      <h1>{title}</h1>
+      </span>
+      <span class="post-externalurl">
       {externalUrl && (
         <a href={externalUrl} target="_blank" rel="noopener noreferrer">
           <button>Visit</button>
         </a>
       )}
+    </span>
     </div>
 
       <div className='hidden md:flex md:justify-between md:items-center md:mb-10'>
