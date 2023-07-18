@@ -9,11 +9,11 @@ const PostHeader = ({ post }) => {
   return (
     <>
       
-      <div className="post-header">
-      <span className="post-title">
+      <div className='post-header'>
+      <span className='post-title'>
       <h1>{title}</h1>
       </span>
-      <span className="post-externalurl">
+      <span className='post-externalurl'>
       {externalUrl && (
         <a href={externalUrl} target="_blank" rel="noopener noreferrer">
           <button>Visit</button>
@@ -25,13 +25,13 @@ const PostHeader = ({ post }) => {
       <div className='hidden md:flex md:justify-between md:items-center md:mb-10'>
        
        
-      <span className="post-avatar"><Avatar name={author.fields.name} picture={author.fields.picture} /></span>
-        <span className="post-date"><DateComponent dateString={date} className='text-sm text-gray-400' /></span>
+      <span className='post-avatar'><Avatar name={author.fields.name} picture={author.fields.picture} /></span>
+        <span className='post-date'><DateComponent dateString={date} className='text-sm text-gray-400' /></span>
       
       
       </div>
 
-      <div className="post-image">
+      <div className='post-image'>
       <div className='mb-8 md:mb-16 sm:mx-0'>
         <ContentfulImage
           alt={`Cover Image for ${title}`}
@@ -43,8 +43,8 @@ const PostHeader = ({ post }) => {
       </div>
 
       <div className='flex justify-between items-center md:hidden mb-6'>
-      <span className="post-avatar"><Avatar name={author.fields.name} picture={author.fields.picture} /></span>
-      <span className="post-date"><DateComponent dateString={date} className='text-sm text-gray-400' /></span>
+      <span className='post-avatar'><Avatar name={author.fields.name} picture={author.fields.picture} /></span>
+      <span className='post-date'><DateComponent dateString={date} className='text-sm text-gray-400' /></span>
       </div>
     </>
   )

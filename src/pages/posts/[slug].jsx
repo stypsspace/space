@@ -13,20 +13,20 @@ const Post = ({ post, morePosts }) => {
   }
 
   return (
-    <section className="section">
-      <div className="container">
-        <article className="post-article">
+    <section className='section'>
+      <div className='container'>
+        <article className='post-article'>
           <PostHeader post={post} />
           <PostBody post={post} />
         </article>
       </div>
 
-      <div className="more-posts-wrap">
-        <div className="more-posts-header">
+      <div className='more-posts-wrap'>
+        <div className='more-posts-header'>
           <h2>More Posts</h2>
         </div>
-        <div className="more-posts-content">
-          <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 sm:gap-10">
+        <div className='more-posts-content'>
+          <ul className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 sm:gap-10'>
             {morePosts.map((post) => (
               <PostCard key={post.fields.slug} post={post} />
             ))}

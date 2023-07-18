@@ -15,12 +15,12 @@ const PostCard = ({ post }) => {
     <li className='rounded-md overflow-hidden shadow-md'>
     <div className='p-4'>
 
-    <div className="post-header">
-       <span className="post-title">
+    <div className='post-header'>
+       <span className='post-title'>
         <h1>{title}</h1>
         </span>
 
-        <span className="post-externalurl">
+        <span className='post-externalurl'>
         {externalUrl && (
           <a href={externalUrl} target='_blank' rel='noopener noreferrer' className='mt-4 text-blue-500 underline'>
             Visit
@@ -30,16 +30,16 @@ const PostCard = ({ post }) => {
       </div>
 
         <div className='text-sm mb-4 text-gray-400'>
-          <span class="post-date"><DateComponent dateString={date} /></span>
+          <span class='post-date'><DateComponent dateString={date} /></span>
         </div>
-        <div className="post-excerpt">
+        <div className='post-excerpt'>
         <p className='text-base mb-4'>{excerpt}</p>
         </div>
-        <div className="post-avatar"><Avatar name={author.fields.name} picture={author.fields.picture} /></div>
+        <div className='post-avatar'><Avatar name={author.fields.name} picture={author.fields.picture} /></div>
         
       </div>
 
-      <div className="post-image">
+      <div className='post-image'>
       <Link href={`/posts/${slug}`} aria-label={title}>
         <div className='mb-2'>
           <ContentfulImage

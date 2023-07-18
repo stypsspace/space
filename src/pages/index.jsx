@@ -32,7 +32,7 @@ const Posts = ({ posts }) => {
           </button>
         </div>
 
-        <ul className="category-container">
+        <ul className='category-container'>
           {filteredPosts.map((post) => (
             <PostCard key={post.slug} post={post} />
           ))}
