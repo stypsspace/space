@@ -2,6 +2,7 @@ import { client } from '@/lib/contentful/client';
 import PostCard from '@/components/posts/PostCard';
 
 const Portfolio = ({ posts }) => {
+  
   return (
     <div className="category-container-wrap">
       <h1>Portfolio Page</h1>

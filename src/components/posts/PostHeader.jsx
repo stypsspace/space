@@ -13,6 +13,7 @@ const PostHeader = ({ post }) => {
       <span className='post-title'>
       <h1>{title}</h1>
       </span>
+
       <span className='post-externalurl'>
       {externalUrl && (
         <a href={externalUrl} target="_blank" rel="noopener noreferrer">
@@ -20,6 +21,7 @@ const PostHeader = ({ post }) => {
         </a>
       )}
     </span>
+    
     </div>
 
       <div className='hidden md:flex md:justify-between md:items-center md:mb-10'>
